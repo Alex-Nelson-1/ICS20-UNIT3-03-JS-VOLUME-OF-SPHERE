@@ -8,9 +8,12 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS20-UNIT3-03-JS-VOLUME-OF-SPHERE/sw.js", {
-    scope: "/ICS20-UNIT3-03-JS-VOLUME-OF-SPHERE/",
-  })
+  navigator.serviceWorker.register(
+    "/ICS20-UNIT3-03-JS-VOLUME-OF-SPHERE/sw.js",
+    {
+      scope: "/ICS20-UNIT3-03-JS-VOLUME-OF-SPHERE/",
+    }
+  )
 }
 
 /**
