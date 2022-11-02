@@ -18,13 +18,12 @@ if (navigator.serviceWorker) {
 
 /* This function calculates a users earnings and displays it */
 function calculateVolume() {
-  
   /* Input */
   const pi = Math.PI
   const radius = parseFloat(document.getElementById("radius").value)
 
   /* Proccess */
-  const volume = 4.0 / 3.0 * pi * radius ** 3 
+  const volume = (4.0 / 3.0) * pi * radius ** 3
 
   /* Output */
   document.getElementById("volume").innerHTML =
