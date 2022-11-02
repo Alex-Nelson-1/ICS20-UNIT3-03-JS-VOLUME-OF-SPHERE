@@ -16,9 +16,17 @@ if (navigator.serviceWorker) {
   )
 }
 
-/**
- * This function displays an alert.
- */
-function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+/* This function calculates a users earnings and displays it */
+function calculateVolume() {
+  
+  /* Input */
+  const pi = Math.PI
+  const radius = parseFloat(document.getElementById("radius").value)
+
+  /* Proccess */
+  const volume = 4.0 / 3.0 * pi * radius ** 3 
+
+  /* Output */
+  document.getElementById("volume").innerHTML =
+    "The volume of your sphere is: " + volume + " cm³"
 }
